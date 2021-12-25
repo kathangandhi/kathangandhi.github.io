@@ -1,19 +1,42 @@
-h1, p {
+body {
+    background-color: lightgrey;
+}
+
+section {
+    background-color: blue;
+    width: 94%;
+    border: 2px solid black;
+    margin: 1%;
+    padding: 2%;
+}
+
+h1, h2, p, a {
     font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
     font-size: 20px;
     color: white;
 }
 
 h1 {
     text-align: center;
-    color: blue;
     font-size: 60px;
+    color: blue;
 }
 
-div {
-    background-color: aqua;
-    width: 94%;
-    border: 2px solid black;
-    margin: 1%;
-    padding: 2%;
+h2 {
+    font-size: 40px;
+    color: white;
+}
+
+a {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: orange;
+    width: 10%;
 }
