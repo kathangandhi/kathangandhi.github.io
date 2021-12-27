@@ -1,13 +1,13 @@
 body {
-    background-color: lightgrey;
+    background-color: tomato;
 }
 
 section {
-    background-color: blue;
     width: 94%;
-    border: 2px solid black;
     margin: 1%;
     padding: 2%;
+    border-color: antiquewhite;
+    border-style: solid none solid none;
 }
 
 h1, h2, p, a {
@@ -22,10 +22,11 @@ p {
 h1 {
     text-align: center;
     font-size: 60px;
-    color: blue;
+    color: white;
 }
 
 h2 {
+    text-decoration: underline;
     font-size: 40px;
     color: white;
 }
@@ -34,9 +35,21 @@ a {
     text-align: center;
 }
 
-button {
+/* resume button */
+#resume {
     display: block;
+    transition-duration: 0.4s; /* animation delay */
     margin: 0 auto;
-    background-color: orange;
-    width: 10%;
+    width: 150px;
+    height: 50px;
+    border: 1px solid brown;
+    font-weight: bold;
+    background-color: antiquewhite;
+    color: brown;
+}
+
+/* triggered when cursor hovers over #resume button */
+#resume:hover {
+    background-color: brown;
+    color: antiquewhite;
 }
