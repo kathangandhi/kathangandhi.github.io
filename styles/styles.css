@@ -1,0 +1,63 @@
+h2, h1, p {
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textblock {
+  width: 94%;
+  margin: 1%;
+  padding: 2%;
+}
+
+body {
+  background-color: tomato;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 40px;
+  color: white;
+}
+
+/* default text block format */
+.textblock {
+  border-color: antiquewhite;
+  border-style: solid none solid none;
+}
+
+#portrait-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* resume button */
+#resume {
+  display: block;
+  transition-duration: 0.4s;
+  /* animation delay */
+  margin: 1% auto;
+  width: 150px;
+  height: 50px;
+  border: 1px solid brown;
+  font-weight: bold;
+  background-color: antiquewhite;
+  color: brown;
+}
+
+/* triggered when cursor hovers over #resume button */
+#resume:hover {
+  background-color: brown;
+  color: antiquewhite;
+}
+
+/*# sourceMappingURL=styles.css.map */

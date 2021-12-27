@@ -1,0 +1,72 @@
+$themeColor: tomato;
+$highlightColor: brown;
+$textColor: white;
+$altColor: antiquewhite;
+$bigFont: 60px;
+$medFont: 40px;
+$smallFont: 20px;
+
+%fontstyle {
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+%alignment {
+    width: 94%;
+    margin: 1%;
+    padding: 2%;
+}
+
+body {
+    background-color: $themeColor;
+}
+
+p {
+    @extend %fontstyle;
+    font-size: $smallFont;
+    color: $textColor;
+}
+
+h1 {
+    @extend %fontstyle;
+    text-align: center;
+    font-size: $bigFont;
+    color: $textColor;
+}
+
+h2 {
+    @extend %fontstyle;
+    text-decoration: underline;
+    font-size: $medFont;
+    color: $textColor;
+}
+
+/* default text block format */
+.textblock {
+    @extend %alignment;
+    border-color: $altColor;
+    border-style: solid none solid none;
+}
+
+#portrait-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* resume button */
+#resume {
+    display: block;
+    transition-duration: 0.4s; /* animation delay */
+    margin: 1% auto;
+    width: 150px;
+    height: 50px;
+    border: 1px solid $highlightColor;
+    font-weight: bold;
+    background-color: $altColor;
+    color: $highlightColor;
+}
+
+/* triggered when cursor hovers over #resume button */
+#resume:hover {
+    background-color: $highlightColor;
+    color: $altColor;
+}
