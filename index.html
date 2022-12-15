@@ -3,51 +3,58 @@
     <head>
         <title>Kathan Gandhi's Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/styles.css">
+        <script src="logic/logic.js"></script>
     </head>
     <body>
         <header>
             <h1>Home</h1>
         </header>
         <div>
-            <div id="portrait-container"><img width=20% src="assets/Kathan Professional Photo.jpg"/></div>
-            <section class="textblock">
-                <h2>Introduction</h2>
-                <p>Nice to meet you, I'm Kathan Gandhi!</p>
-                <p>
-                    Currently, I am a sophomore at UC Berkeley majoring in EECS 
-                    (Electrical Engineering and Computer Science). Undoubtedly, I am a very 
-                    passionate coder and always wanted to make my own website. Nevertheless, 
-                    my primary interests lie in the booming field of AI and I desire to 
-                    contribute in smart healthcare projects that possess great potential for 
-                    social welfare.
-                </p>
-                <p>
-                    Outside my academic ambitions, I enjoy playing (e-)sports, engaging with 
-                    digital media, and vibing to music. Recently, I started cooking in my 
-                    college apartment as a part of my new responsibilities and dabbled in the 
-                    stock market as well.
-                </p>
-                <p>
-                    You might be here to just check my work out or genuinely get to know me.
-                    Either way, I hope the website serves you well.
-                </p>
-            </section>
+            <img class="main-img" width=20% src="assets/Kathan Professional Photo.jpg"/>
+            <br>
+            <button id="resume" type="submit">My Resume</button>
         </div>
+        <section>
+            <h2>Introduction</h2>
+            <p>Nice to meet you, I'm Kathan Gandhi!</p>
+            <p>
+                Currently, I am a sophomore at UC Berkeley majoring in EECS 
+                (Electrical Engineering and Computer Science). Undoubtedly, I am a very 
+                passionate coder and always wanted to make my own website. Nevertheless, 
+                my primary interests lie in the booming field of AI and I desire to 
+                contribute in smart healthcare projects that possess great potential for 
+                social welfare.
+            </p>
+            <p>
+                Outside my academic ambitions, I enjoy playing (e-)sports, engaging with 
+                digital media, and vibing to music. Recently, I started cooking in my 
+                college apartment as a part of my new responsibilities and dabbled in the 
+                stock market as well.
+            </p>
+            <p>
+                You might be here to just check my work out or genuinely get to know me.
+                Either way, I hope the website serves you well.
+            </p>
+        </section>
         
-        <section class="textblock">
+        <section>
             <h2>Contact Details</h2>
             <p>
                 Kathan Gandhi<br>
                 Berkeley, CA<br>
                 kathangandhi@berkeley.edu<br>
-                (469)605-7647
+                (469) 605-7647
             </p>
         </section>
 
-        <button id="resume" type="submit" onclick="window.open('assets/Kathan_Gandhi_Internship_Resume.pdf')">
-            My Resume
-        </button>
+        <div>
+            <label>Select your preferred color: </label>
+            <select id="color-change" type="submit">
+                <option value="tomato">Orange</option>
+                <option value="black">Black</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
     </body>
 </html>

@@ -1,7 +1,6 @@
 $themeColor: tomato;
 $highlightColor: brown;
 $textColor: white;
-$altColor: antiquewhite;
 $bigFont: 60px;
 $medFont: 40px;
 $smallFont: 20px;
@@ -11,16 +10,48 @@ $smallFont: 20px;
 }
 
 %alignment {
-    width: 94%;
     margin: 1%;
-    padding: 2%;
+    padding: 1%;
+}
+
+@keyframes grow {
+    from {
+        font-size: $smallFont;
+    }
+    to {
+        font-size: $bigFont;
+    }
+}
+
+@keyframes move {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 50%;
+        -webkit-transform:translate3d(-50%,0,0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    @extend %alignment;
+    border-bottom: 5px solid $textColor;
 }
 
 body {
     background-color: $themeColor;
 }
 
-p {
+p, label, li {
     @extend %fontstyle;
     font-size: $smallFont;
     color: $textColor;
@@ -28,6 +59,7 @@ p {
 
 h1 {
     @extend %fontstyle;
+    animation: grow 2s forwards;
     text-align: center;
     font-size: $bigFont;
     color: $textColor;
@@ -40,33 +72,44 @@ h2 {
     color: $textColor;
 }
 
-/* default text block format */
-.textblock {
+div {
     @extend %alignment;
-    border-color: $altColor;
-    border-style: solid none solid none;
 }
 
-#portrait-container {
-    display: flex;
-    justify-content: center;
+/* default text block format */
+section {
+    @extend %alignment;
+    animation: appear 4s forwards;
+    border-top: 5px solid $textColor;
+    border-bottom: 5px solid $textColor;
+}
+
+.main-img {
+    animation: move 2s forwards;
+    position: relative;
+    display: block;
 }
 
 /* resume button */
 #resume {
+    animation: move 2s forwards;
+    position: relative;
     display: block;
-    transition-duration: 0.4s; /* animation delay */
-    margin: 1% auto;
+    transition-duration: 0.4s; //animation delay
     width: 150px;
     height: 50px;
-    border: 1px solid $highlightColor;
+    border: none;
     font-weight: bold;
-    background-color: $altColor;
-    color: $highlightColor;
+    background-color: $textColor;
+    color: $themeColor;
 }
 
 /* triggered when cursor hovers over #resume button */
 #resume:hover {
     background-color: $highlightColor;
-    color: $altColor;
+    color: $textColor;
+}
+
+#color-change {
+
 }
