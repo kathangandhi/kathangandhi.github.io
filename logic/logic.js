@@ -6,12 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
     select.style.color = option.value;
     document.querySelector("body").style.backgroundColor = option.value;
     document.querySelector("#selected").style.color = option.value;
+    if (document.getElementById("resume") !== null) {
+        document.querySelector("#resume").style.color = option.value;
+    }
 
     select.onchange = function() {
         window.localStorage.setItem("index", select.selectedIndex.toString());
         select.style.color = this.value;
         document.querySelector("body").style.backgroundColor = this.value;
         document.querySelector("#selected").style.color = this.value;
+
+        if (document.getElementById("resume") !== null) {
+            document.querySelector("#resume").style.color = this.value;
+        }
     }
 
     document.querySelectorAll(".color-option").forEach(option => {

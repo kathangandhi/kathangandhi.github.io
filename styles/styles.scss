@@ -91,7 +91,7 @@ h6 {
     @extend %fontstyle;
     margin: 0%;
     padding: 1%;
-    text-align: right;
+    text-align: left;
 }
 
 /* default text block format */
@@ -102,7 +102,7 @@ section {
 }
 
 .main-img {
-    animation: move 2s forwards;
+    animation: 2s forwards move;
     position: relative;
     display: block;
     width: 25%;
@@ -133,7 +133,7 @@ section {
 
 .social-logo {
     margin: 1%;
-    animation: wiggle 4s forwards;
+    animation: 3s forwards wiggle;
     float: right;
     width: 3%;
 }
