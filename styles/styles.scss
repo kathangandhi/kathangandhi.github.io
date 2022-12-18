@@ -4,6 +4,7 @@ $textColor: white;
 $bigFont: 2.5em;
 $medFont: 1.25em;
 $smallFont: 1.5em;
+$tinyFont: 0.75em;
 
 %fontstyle {
     font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
@@ -89,6 +90,8 @@ h2 {
 
 h6 {
     @extend %fontstyle;
+    font-size: $tinyFont;
+    display: inline-block;
     margin: 0%;
     padding: 1%;
     text-align: left;
@@ -172,4 +175,9 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: $highlightColor;
+}
+
+#code {
+    @extend %fontstyle;
+    text-align: right;
 }

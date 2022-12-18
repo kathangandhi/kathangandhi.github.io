@@ -1,4 +1,4 @@
-nav ul li a, h6, h2, h1, p, li {
+#code, nav ul li a, h6, h2, h1, p, li {
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
@@ -74,6 +74,8 @@ h2 {
 }
 
 h6 {
+  font-size: 0.75em;
+  display: inline-block;
   margin: 0%;
   padding: 1%;
   text-align: left;
@@ -155,6 +157,10 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: blue;
+}
+
+#code {
+  text-align: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
